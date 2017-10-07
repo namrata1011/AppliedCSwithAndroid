@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.teasers.TeasersActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:text="Applied CS with Android"
+        android:textSize="20dp"
+
+        android:id="@+id/textView"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="117dp"
+        android:layout_height="67dp"
+        app:srcCompat="@drawable/google"
+        tools:layout_editor_absoluteY="1dp"
+        tools:layout_editor_absoluteX="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Day1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="Day 1"
+        android:layout_marginTop="19dp"
+        android:onClick="showDescription"
+        android:background="@color/rc"
+        />
+      <!--  android:background="@color/rc" -->
+
+
+
+    <Button
+        android:id="@+id/Day2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Day1"
+        android:layout_below="@+id/Day1"
+        android:layout_marginTop="17dp"
+        android:onClick="showDescription"
+        android:background="@color/bc"
+        android:text="Day 2" />
+    <!-- android:background="@color/bc" -->
+
+
+    <Button
+        android:id="@+id/Day3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Day2"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_green_light"
+        android:onClick="showDescription"
+        android:text="Day 3" />
+
+    <Button
+        android:id="@+id/Day4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Day3"
+        android:layout_below="@+id/Day3"
+        android:layout_marginTop="18dp"
+        android:onClick="showDescription"
+        android:background="@color/yc"
+        android:text="Day 4" />
+
+    <Button
+        android:id="@+id/Day5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Day4"
+        android:layout_below="@+id/Day4"
+        android:layout_marginTop="17dp"
+        android:onClick="showDescription"
+        android:background="@color/rc"
+        android:text="Day 5" />
+
+    <Button
+        android:id="@+id/Day6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Day5"
+        android:layout_below="@+id/Day5"
+        android:layout_marginTop="23dp"
+        android:onClick="showDescription"
+        android:background="@color/bc"
+        android:text="Day 6" />
+
+</RelativeLayout>

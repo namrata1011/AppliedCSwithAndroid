@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android"
+    tools:context="com.example.teasers.NewQuestions">
+
+    <TextView
+        android:id="@+id/ques"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <Button
+        android:id="@+id/opta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ques"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="34dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="start"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/optb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/opta"
+        android:layout_below="@+id/opta"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="start"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/optc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/optb"
+        android:layout_below="@+id/optb"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="start"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/optd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/optc"
+        android:layout_below="@+id/optc"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="start"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal"
+        android:text="NEXT"
+        android:layout_marginStart="72dp"
+        android:layout_below="@+id/optd"
+        android:layout_toEndOf="@+id/optd"
+        android:layout_marginTop="8dp"
+        android:onClick="next"/>
+</RelativeLayout>
